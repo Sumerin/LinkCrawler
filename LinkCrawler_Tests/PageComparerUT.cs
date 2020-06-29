@@ -27,7 +27,7 @@ namespace LinkCrawler_Tests
             mock.Setup(m => m.Url).Returns("Object B Url");
             var comparer = new PageComparer();
             Page a = null;
-            Page b = new Page(mock.Object);
+            Page b = new Page(mock.Object, null);
 
             //Act/Assert
             Assert.IsFalse(comparer.Equals(a, b));
@@ -40,7 +40,7 @@ namespace LinkCrawler_Tests
             var mock = new Mock<IHtmlProvider>();
             mock.Setup(m => m.Url).Returns("Object A Url");
             var comparer = new PageComparer();
-            Page a = new Page(mock.Object);
+            Page a = new Page(mock.Object, null);
             Page b = null;
 
             //Act/Assert
@@ -54,7 +54,7 @@ namespace LinkCrawler_Tests
             var mock = new Mock<IHtmlProvider>();
             mock.Setup(m => m.Url).Returns("Object A Url");
             var comparer = new PageComparer();
-            Page a = new Page(mock.Object);
+            Page a = new Page(mock.Object, null);
 
             //Act/Assert
             Assert.IsTrue(comparer.Equals(a, a));
@@ -71,8 +71,8 @@ namespace LinkCrawler_Tests
             mockB.Setup(m => m.Url).Returns("google.com");
 
             var comparer = new PageComparer();
-            Page a = new Page(mockA.Object);
-            Page b = new Page(mockB.Object);
+            Page a = new Page(mockA.Object, null);
+            Page b = new Page(mockB.Object, null);
 
             //Act/Assert
             Assert.IsTrue(comparer.Equals(a, b));
