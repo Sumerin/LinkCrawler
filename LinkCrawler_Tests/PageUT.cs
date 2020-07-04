@@ -1,9 +1,9 @@
-using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
+using System.Linq;
+using System.Collections.Generic;
 
 using LinkCrawler;
-using System.Collections.Generic;
 
 namespace LinkCrawler_Tests
 {
@@ -44,7 +44,8 @@ namespace LinkCrawler_Tests
         {
             //Arrange
             string siteSource = "mock string";
-            var sites = new List<string>() { "ajax.googleapis.com" };
+            string subPageUrl = "ajax.googleapis.com" ;
+            var sites = new List<string>() { subPageUrl };
             var mockProvider = new Mock<IHtmlProvider>();
             mockProvider.Setup(m => m.GetSiteSource())
                         .Returns(siteSource);
@@ -61,6 +62,8 @@ namespace LinkCrawler_Tests
 
             //Assert
             Assert.AreSame(domains, page.DomainsCounter);
+            Assert.AreEqual(1,page.SubPages.Count);
+            Assert.AreEqual(subPageUrl ,page.SubPages.FirstOrDefault().Url);
 
         }
 
@@ -115,5 +118,6 @@ namespace LinkCrawler_Tests
             Assert.AreEqual(1, domains["ajax.googleapis.com"]);
             Assert.AreEqual(1, domains["cdn.googleapis.com"]);
         }
+
     }
 }

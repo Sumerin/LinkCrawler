@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 
 using LinkCrawler;
-using System.Collections.Generic;
 
 namespace LinkCrawler_Tests
 {

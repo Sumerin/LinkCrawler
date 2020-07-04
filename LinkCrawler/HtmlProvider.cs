@@ -5,8 +5,13 @@ namespace LinkCrawler
 {
     public class HtmlProvider : IHtmlProvider
     {
-
         public string Url { get; private set; }
+
+        public IHtmlProvider CreateProvier(string url)
+        {
+            return new HtmlProvider(url);
+        }
+
         public HtmlProvider(string url)
         {
             this.Url = url;

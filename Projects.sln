@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkCrawler", "LinkCrawler\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkCrawler_Tests", "LinkCrawler_Tests\LinkCrawler_Tests.csproj", "{20753A57-9848-46BE-97C2-B40CB4E336C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web", "web\web.csproj", "{F049BDE1-0D19-4692-AAFC-EEA05E44423D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{20753A57-9848-46BE-97C2-B40CB4E336C8}.Release|x64.Build.0 = Release|Any CPU
 		{20753A57-9848-46BE-97C2-B40CB4E336C8}.Release|x86.ActiveCfg = Release|Any CPU
 		{20753A57-9848-46BE-97C2-B40CB4E336C8}.Release|x86.Build.0 = Release|Any CPU
+		{F049BDE1-0D19-4692-AAFC-EEA05E44423D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F049BDE1-0D19-4692-AAFC-EEA05E44423D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F049BDE1-0D19-4692-AAFC-EEA05E44423D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F049BDE1-0D19-4692-AAFC-EEA05E44423D}.Debug|x64.Build.0 = Debug|Any CPU
+		{F049BDE1-0D19-4692-AAFC-EEA05E44423D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F049BDE1-0D19-4692-AAFC-EEA05E44423D}.Debug|x86.Build.0 = Debug|Any CPU
+		{F049BDE1-0D19-4692-AAFC-EEA05E44423D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F049BDE1-0D19-4692-AAFC-EEA05E44423D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F049BDE1-0D19-4692-AAFC-EEA05E44423D}.Release|x64.ActiveCfg = Release|Any CPU
+		{F049BDE1-0D19-4692-AAFC-EEA05E44423D}.Release|x64.Build.0 = Release|Any CPU
+		{F049BDE1-0D19-4692-AAFC-EEA05E44423D}.Release|x86.ActiveCfg = Release|Any CPU
+		{F049BDE1-0D19-4692-AAFC-EEA05E44423D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
