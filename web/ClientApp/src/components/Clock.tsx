@@ -10,7 +10,7 @@ type ClockProps = ClockStore.ClockState &
 
 
 class Clock extends React.PureComponent<ClockProps>{
-
+     
     public render() {
         let hours = ("0" + this.props.hours).slice(-2);
         let minutes = ("0" + this.props.minutes).slice(-2);
@@ -31,6 +31,7 @@ class Clock extends React.PureComponent<ClockProps>{
             </React.Fragment>
         );
     }
+
 }
 
 export default connect(

@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Counter from './components/Counter';
 import FetchData from './components/FetchData';
 import Clock from './components/Clock';
+import LinkCrawler from './components/LinkCrawler';
 
 import './custom.css'
 
@@ -14,5 +15,6 @@ export default () => (
         <Route path='/counter' component={Counter} />
         <Route path='/fetch-data/:startDateIndex?' component={FetchData} />
         <Route path='/clock' component={Clock} />
+        <Route path='/linkCrawler' component={LinkCrawler} />
     </Layout>
 );

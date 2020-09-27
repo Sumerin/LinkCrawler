@@ -3,7 +3,7 @@ using System.Text.RegularExpressions;
 using System.Collections.Generic;
 namespace LinkCrawler
 {
-    public class UrlMatcher
+    public class UrlMatcher: IUrlMatcher
     {
         const string pattern = "((http|https)://){0,1}(www\\.){0,1}([a-zA-Z0-9-\\.]*\\.[a-zA-Z]{2,3})(/[a-zA-z0-9-=\\.\\$\\?]*)*";
 

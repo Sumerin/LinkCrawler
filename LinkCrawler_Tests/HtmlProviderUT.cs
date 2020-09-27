@@ -22,5 +22,18 @@ namespace LinkCrawler_Tests
             Assert.IsInstanceOfType(child, typeof(HtmlProvider));
             Assert.AreEqual(subUrl, child.Url);
         }
+
+        [TestMethod]
+        public void GivenHtmlProvider_whenGetSources_ReturnsGoogleSource()
+        {
+            //Arrange
+            var htmlProvider = new HtmlProvider("http://www.google.com");
+
+            //Act
+            string result = htmlProvider.GetSiteSource();
+
+            //Assert
+            Assert.IsNotNull(result);
+        }
     }
 }
